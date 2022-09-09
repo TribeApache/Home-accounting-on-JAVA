@@ -9,18 +9,18 @@ final public class Text {
     }
     public static String[] getMonths() {
         String[] months = new String[12];
-        months[0] = get(JANUARY);
-        months[0] = get(FEBRUARY);
-        months[0] = get(MARCH);
-        months[0] = get(APRIL);
-        months[0] = get(MAY);
-        months[0] = get(JUNE);
-        months[0] = get(JULY);
-        months[0] = get(AUGUST);
-        months[0] = get(SEPTEMBER);
-        months[0] = get(OCTOBER);
-        months[0] = get(NOVEMBER);
-        months[0] = get(DECEMBER);
+        months[0] = get("JANUARY");
+        months[1] = get("FEBRUARY");
+        months[2] = get("MARCH");
+        months[3] = get("APRIL");
+        months[4] = get("MAY");
+        months[5] = get("JUNE");
+        months[6] = get("JULY");
+        months[7] = get("AUGUST");
+        months[8] = get("SEPTEMBER");
+        months[9] = get("OCTOBER");
+        months[10] = get("NOVEMBER");
+        months[11] = get("DECEMBER");
         return months;
 
     }
