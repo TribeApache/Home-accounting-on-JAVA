@@ -15,14 +15,12 @@ public class PersonalFinance {
         System.out.println(Arrays.toString(Text.getMonths()));
     }
 private static void init(){
-    Text.init();
-    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
     try {
-        ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("fonts/Roboto-Light.ttf")));
-    } catch (FontFormatException e) {                // Переписать в дальнейшем строки с 18 по 21 в multi catch
-        throw new RuntimeException(e);
-    } catch (IOException e) {
-        throw new RuntimeException(e);
+        Text.init();
+    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("C:/Users/user/Desktop/Roboto-Light.ttf")));
+    } catch (FontFormatException | IOException ex) {
+        Logger.getLogger(PersonalFinance.class.getName()).log(Level.SEVERE, null, ex);
     }
 }
 }
