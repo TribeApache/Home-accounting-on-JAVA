@@ -4,7 +4,6 @@ import PersonalFinance.exception.ModelException;
 
 import java.util.Objects;
 
-public class Currency {
     public class Currency extends Common {
 
         private String title;
@@ -99,4 +98,3 @@ public class Currency {
             return rate / currency.rate;
         }
     }
-}

@@ -4,13 +4,13 @@ import PersonalFinance.exception.ModelException;
 
 import java.util.Objects;
 
-public class Arcticle extends Common {
+public class Article extends Common {
 
     private String title;
 
-    public Arcticle() {}
+    public Article() {}
 
-    public Arcticle(String title) {
+    public Article(String title) {
         if (title.length() == 0) throw new ModelException(ModelException.TITLE_EMPTY);
         this.title = title;
     }
@@ -25,7 +25,7 @@ public class Arcticle extends Common {
 
     @Override
     public String toString() {
-        return "Arcticle{" +
+        return "Article{" +
                 "title='" + title + '\'' +
                 '}';
     }
@@ -34,8 +34,8 @@ public class Arcticle extends Common {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Arcticle arcticle = (Arcticle) o;
-        return title.equals(arcticle.title);
+        Article article = (Article) o;
+        return title.equals(article.title);
     }
 
     @Override
